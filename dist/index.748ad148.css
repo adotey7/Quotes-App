@@ -1,0 +1,152 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fcfbfc;
+  font-family: Inter, sans-serif;
+}
+
+h1 {
+  font-family: Playfair Display, serif;
+}
+
+h4 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.container {
+  grid-template-rows: repeat(2, 1fr);
+  height: 100vh;
+  display: grid;
+  overflow-y: auto;
+}
+
+.header {
+  background-image: url("quotes.0625444c.png");
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  background-size: 10rem;
+  grid-template-columns: repeat(2, 1fr 1fr);
+  display: grid;
+}
+
+.main-body {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-height: 70vh;
+  margin-top: 50px;
+  display: flex;
+  position: relative;
+}
+
+.spinner {
+  position: absolute;
+}
+
+.section--2 {
+  grid-column: span 3;
+}
+
+.section--2, .section--1 {
+  flex-direction: column;
+  display: flex;
+}
+
+.section--1 {
+  justify-content: space-between;
+  align-items: start;
+  padding: 1rem;
+}
+
+.section--2 {
+  justify-content: center;
+  align-items: center;
+}
+
+.span-class {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.rounded {
+  background-color: #cfa226;
+  border-radius: 6.25rem;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 10px;
+  display: flex;
+}
+
+.section--2 p {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.section--2 p:first-child {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.author-share {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.author-share p {
+  margin-right: 10px;
+}
+
+.author-share .rounded:hover {
+  background-color: #9b791c;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 10px 15px #0000001a;
+}
+
+.quote-container {
+  text-align: center;
+  background-color: #9ad2cb;
+  border-radius: .625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 15.625rem;
+  height: 18.75rem;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+}
+
+.error {
+  color: #000;
+}
+
+.loader {
+  aspect-ratio: 1;
+  background: radial-gradient(farthest-side, #ffa516 94%, #0000) top / 8px 8px no-repeat, conic-gradient(#0000 30%, #ffa516);
+  border-radius: 50%;
+  width: 50px;
+  animation: 1s linear infinite l13;
+  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+}
+
+@keyframes l13 {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/*# sourceMappingURL=index.748ad148.css.map */
