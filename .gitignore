@@ -1,1 +1,4 @@
 /test.php
+/node_modules
+/.parcel-cache
+/dist
